@@ -1,0 +1,182 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.pet-card-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Navbar */
+.navbar-brand img {
+    transition: transform 0.3s;
+}
+
+.navbar-brand:hover img {
+    transform: rotate(15deg);
+}
+
+/* Tarjetas de mascotas */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Carrusel */
+.carousel {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+}
+
+.btn-primary:hover {
+    background-color: #5a32a3;
+    border-color: #5a32a3;
+}
+
+.btn-outline-primary {
+    color: #6f42c1;
+    border-color: #6f42c1;
+}
+
+.btn-outline-primary:hover {
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+}
+
+/* Badges */
+.badge {
+    font-weight: normal;
+}
+
+/* Avatar */
+.rounded-circle {
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pet-card-img {
+        height: 150px;
+    }
+}
+/* Estilos para el mapa */
+#map {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el mensaje de ayuda */
+.form-text {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+/* Estilo para el control de búsqueda */
+.leaflet-control-search .search-input {
+    width: 200px;
+    padding: 5px;
+}
+
+/* Marcador personalizado */
+.leaflet-marker-icon {
+    filter: hue-rotate(120deg); /* Cambia color del marcador */
+}
+/* Estilos para la página de detalles */
+.thumbnail-img {
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    border-radius: 4px;
+}
+
+.thumbnail-img:hover, 
+.thumbnail-img.active {
+    border-color: #0d6efd;
+    transform: scale(1.05);
+}
+
+.pet-detail-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.pet-detail-card:hover {
+    transform: translateY(-5px);
+}
+
+.carousel-control-prev, 
+.carousel-control-next {
+    background-color: rgba(0,0,0,0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    left: 15px;
+}
+
+.carousel-control-next {
+    right: 15px;
+}
+
+/* Estilos para los badges */
+.badge {
+    font-weight: 500;
+    padding: 0.5em 0.8em;
+    border-radius: 20px;
+}
+
+/* Estilos para el mapa */
+#petMap {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+/* Estilos para el modal de contacto */
+.modal-header {
+    border-radius: 0;
+}
+
+/* Estilos para botones */
+.btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+}
